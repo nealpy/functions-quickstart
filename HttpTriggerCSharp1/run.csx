@@ -27,7 +27,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     return jsonContent == null
     ? req.CreateResponse(HttpStatusCode.BadRequest, "Pass a name on the query string or in the request body")
-    : req.CreateResponse(HttpStatusCode.OK, "Hello " + jsonContent);
+    : req.CreateResponse(HttpStatusCode.OK, "Hello world " + jsonContent);
 }
 
 public class GridEvent
